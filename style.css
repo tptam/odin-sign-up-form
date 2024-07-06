@@ -3,3 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    display: flex;
+}
+
+.brand {
+    flex: none;
+    width: 38%;
+    height: 100vh;
+    background-image: url("./images/marcus-woodbridge-Zu5eyzwwPpU-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content {
+    flex: 1 1 0;
+}
