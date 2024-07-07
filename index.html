@@ -56,21 +56,21 @@
                             inputmode="numeric"
                             minlength="5"
                             maxlength="20"
-                            pattern="+?[\d-.()]+"
+                            pattern="^\+?\d+$"
                         >
                         <span class="error"></span>
                     </li>
                     <li class="field">
                         <label for="pwd">PASSWORD</label>
                         <input type="password" name="pwd" id="pwd"
-                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,}$"
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+\-]).{8,}$"
                             required>
                         <span class="error">* Passwords do not match</span>
                     </li>
                     <li class="field">
                         <label for="pwd-confirm">CONFIRM PASSWORD</label>
                         <input type="password" name="pwd-confirm" id="pwd-confirm"
-                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,}$"
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+\-]).{8,}$"
                             required>
                         <span class="error"></span>
                     </li>
