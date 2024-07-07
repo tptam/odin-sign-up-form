@@ -176,3 +176,7 @@ button {
     box-shadow: 3px 3px 3px var(--shadow-color);
 }
 
+button:active {
+    box-shadow: none;
+    transform: translate(2px, 2px);
+}
