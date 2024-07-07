@@ -149,7 +149,7 @@ p.already {
 .field-group input:focus {
     border: 1px solid var(--focus-color);
     outline: none;
-    box-shadow: 2px 2px 3px var(--shadow-color);
+    box-shadow: 2px 2px 5px var(--shadow-color);
 }
 
 
