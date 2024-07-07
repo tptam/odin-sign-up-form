@@ -127,6 +127,7 @@ p.already {
 }
 
 .field-group ul {
+    width: min(100%, 58ch);
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -137,7 +138,7 @@ p.already {
 .field-group li {
     display: flex;
     flex-direction: column;
-    width: 20rem;
+    width: 22ch;
 }
 
 .field-group label {
