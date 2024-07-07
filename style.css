@@ -5,8 +5,7 @@
     --light-background-color:#f9fafb;
     --field-border-color: #E5E7EB;
     --shadow-color: #c2cad6;
-    --invalid-color: rgb(222, 52, 52);
-    --valid-color: green;
+    --invalid-color: red;
     --focus-color: #3474bc;
 }
 
@@ -121,7 +120,7 @@ p.already {
     display: flex;
     flex-wrap: wrap;
     column-gap: calc(var(--space) * 4);
-    row-gap: calc(var(--space)* 1.8);
+    row-gap: calc(var(--space)* 1.1);
 }
 
 .field-group li {
@@ -151,6 +150,13 @@ p.already {
 
 .field-group input:invalid {
     border: 1px solid var(--invalid-color);
+}
+
+.field-group .error {
+    height: 1rem;
+    color: var(--invalid-color);
+    font-size: 1rem;
+    font-weight: initial;
 }
 
 p.already {
