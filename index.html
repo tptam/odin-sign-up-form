@@ -29,32 +29,49 @@
                 <ul>
                     <li class="field">
                         <label for="first-name">FIRST NAME</label>
-                        <input type="text" name="first-name" id="first-name">
+                        <input type="text" name="first-name" id="first-name"
+                            autocomplete="given-name"
+                            placeholder=" "
+                            required>
                         <span class="error"></span>
                     </li>
                     <li class="field">
                         <label for="last-name">LAST NAME</label>
-                        <input type="text" name="last-name" id="last-name">
-                        <span class="error">required</span>
+                        <input type="text" name="last-name" id="last-name"
+                            placeholder=" "
+                            autocomplete="family-name">
+                        <span class="error"></span>
                     </li>
                     <li class="field">
                         <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email"
+                            autocomplete="email"
+                            placeholder=" "
+                            required>
                         <span class="error"></span>
                     </li>
                     <li class="field">
                         <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" name="phone" id="phone">
-                        <span class="error">required</span>
+                        <input type="tel" name="phone" id="phone"
+                            inputmode="numeric"
+                            minlength="5"
+                            maxlength="20"
+                            pattern="+?[\d-.()]+"
+                        >
+                        <span class="error"></span>
                     </li>
                     <li class="field">
                         <label for="pwd">PASSWORD</label>
-                        <input type="password" name="pwd" id="pwd">
+                        <input type="password" name="pwd" id="pwd"
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,}$"
+                            required>
                         <span class="error">* Passwords do not match</span>
                     </li>
                     <li class="field">
                         <label for="pwd-confirm">CONFIRM PASSWORD</label>
-                        <input type="password" name="pwd-confirm" id="pwd-confirm">
+                        <input type="password" name="pwd-confirm" id="pwd-confirm"
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,}$"
+                            required>
                         <span class="error"></span>
                     </li>
                 </ul>

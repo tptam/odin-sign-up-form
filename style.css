@@ -5,8 +5,8 @@
     --light-background-color:#f9fafb;
     --field-border-color: #E5E7EB;
     --shadow-color: #c2cad6;
-    --invalid-color: red;
-    --focus-color: #3474bc;
+    --invalid-color: #d72e2e;
+    --focus-color: #0f60ba;
 }
 
 @font-face {
@@ -142,15 +142,16 @@ p.already {
     border-radius: 5px;
 }
 
+.field-group input:invalid:not(:placeholder-shown) {
+    border: 1px solid var(--invalid-color);
+}
+
 .field-group input:focus {
     border: 1px solid var(--focus-color);
     outline: none;
     box-shadow: 2px 2px 3px var(--shadow-color);
 }
 
-.field-group input:invalid {
-    border: 1px solid var(--invalid-color);
-}
 
 .field-group .error {
     height: 1rem;
