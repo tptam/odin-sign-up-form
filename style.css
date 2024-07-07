@@ -68,7 +68,7 @@ body {
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 62vh;
+    top: 18vh;
 }
 
 .brand .logo img {
