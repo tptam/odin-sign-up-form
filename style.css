@@ -89,6 +89,10 @@ body {
     color: var(--shadow-color);
 }
 
+.brand .footer li:not(:last-of-type) {
+    margin-bottom: calc(var(--space)*0.5);
+}
+
 .content>p,
 .field-group,
 p.button,
